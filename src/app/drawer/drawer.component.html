@@ -1,0 +1,11 @@
+    <div style="text-align: center;">
+        <h1>Choose the shape to be drawn</h1>
+            <select name="shape2draw" (input)="Paint($event)">
+                <option disabled selected>Select a shape</option>
+                <option>Rectangle</option>
+                <option>Circle</option>
+                <option>Square</option>
+            </select>
+        <button (click)="Clear()" class="btn">Clear</button>
+    </div>
+<canvas #canvas id="mycanvas" width="800px" height="500px" style="border: 1px; border-style: dotted; border-color: black;"></canvas>
